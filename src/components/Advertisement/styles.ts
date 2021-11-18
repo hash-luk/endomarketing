@@ -29,6 +29,6 @@ export const AdContainer = styled.div`
     }
 
     @media(max-width: 480px) {
-        display: block;
+        display: none;
     }
 `
