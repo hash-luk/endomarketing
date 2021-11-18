@@ -33,12 +33,13 @@ export const CardContainer = styled.div`
         margin-left: 14px;
 
         .event {
-            background-color: red;
+            width: 29px;
+            background-color: #EE8686;
             color: #FFF;
         }
 
         .publication {
-            background-color: #969696;
+            background-color: #707070;
             color: #FFF;
         }
     }
