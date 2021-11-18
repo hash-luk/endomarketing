@@ -37,14 +37,14 @@ export const Card = () => {
                         <div id="content">
                             <p className="title">{e.title}</p>
                             <div id="additionalInformation">
-                                <Chip size="small" label={e.type === "event"? "EVENTO" : "PUBLICAÇÂO" } style={chipStyles}/>
-                                <p className="date">{e.date}</p>
-                                {e.type === "event" ? <p id="event">3 CONFIRMAÇÕES DE 15</p> : <p></p>}
+                                <Chip size="small" label={e.type === "event"? "EVENTO" : "PUBLICAÇÂO" } style={chipStyles} className={e.type === "event" ? "event" : "publication"} />
+                                <p className="date">| {e.date}</p>
+                                {e.type === "event" ? <p id="event">| 3 CONFIRMAÇÕES DE 15</p> : <p></p>}
                             </div>
                             <p>{e.description}</p>
                         </div>
                         </div>
-                        <Fab size="small" color="secondary" aria-label="more" style={fabStyles}>
+                        <Fab size="small" color="secondary" aria-label="more" style={fabStyles} id="fabicon">
                             <MoreHorizIcon style={moreIconStyles}/>
                         </Fab>
                     </div>

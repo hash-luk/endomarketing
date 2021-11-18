@@ -1,6 +1,5 @@
 import React from "react";
 import GlobalStyle from "./style/GlobalStyle";
-import { Grid } from "@mui/material";
 import { Container } from "./style/styles";
 import { Header } from "./components/Header";
 import { DisplayScreen } from "./components/Display";

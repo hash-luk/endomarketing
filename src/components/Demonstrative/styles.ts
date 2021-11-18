@@ -60,4 +60,22 @@ export const Container = styled.div`
             box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
         }
     }
+    
+    @media(max-width: 1024px) {
+        width: 90%;
+
+        #header {
+            justify-content: space-between;
+            padding: 0px 20px;
+        }
+
+        #images {
+            width: 95%;
+            justify-content: space-evenly;
+
+            img {
+                box-shadow: none;
+            }
+        }
+    }
 `

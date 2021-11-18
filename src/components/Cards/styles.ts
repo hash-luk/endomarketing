@@ -31,6 +31,16 @@ export const CardContainer = styled.div`
         flex-direction: column;
         align-items: left;
         margin-left: 14px;
+
+        .event {
+            background-color: red;
+            color: #FFF;
+        }
+
+        .publication {
+            background-color: #969696;
+            color: #FFF;
+        }
     }
 
     #additionalInformation {
@@ -75,5 +85,75 @@ export const CardContainer = styled.div`
     .description {
         font-weight: ligh;
         font-size: 13px;
+    }
+
+
+
+    @media(max-width: 768px) {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+
+        .Card {
+            width: 700px;
+        }
+
+        #cardImage {
+            width: 50px;
+            height: 50px;
+        }
+
+        #cardContent {
+            width: 500px;
+        }
+
+        #content {
+            margin-left: 7px;
+        }
+    }
+
+    @media(max-width:480px) {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    
+        .Card {
+            width: 100%;
+            height: 300px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 5px;
+        }
+
+        #cardContent {
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        #cardImage {
+            width: 50%;
+            height: 100%;
+        }
+
+        #content {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            text-align: center;
+            align-items: center;
+            justify-content: space-evenly;
+
+            p:last-child {
+                font-size: 10px;
+            }
+        }
+
+        #fabicon {
+            display: none
+        }
     }
 `

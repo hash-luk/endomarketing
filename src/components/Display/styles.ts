@@ -39,6 +39,28 @@ export const Container = styled.div`
             height: 20px;
         }
     }
+
+    @media(max-width: 768px) {
+        width: 90%;
+        height: 650px;
+
+        .cardsDisplay {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+    @media(max-width:480px) {
+        width: 100vw;
+        height: 900px;        
+        
+        .head {
+            height: 100px;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    }
 `
 
 export const Title = styled.p`

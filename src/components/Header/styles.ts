@@ -5,7 +5,6 @@ export const HeadBar = styled.div`
     height: 55px;
     background-color: #FFFFFF;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
-    /* position: fixed; */
 
     .logo {
         width: 100%;
@@ -16,6 +15,22 @@ export const HeadBar = styled.div`
             :hover {
                 cursor: pointer;
             }
+        }
+    }
+
+    @media(max-width: 768px) {
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @media(max-width: 480px) {
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 ` 

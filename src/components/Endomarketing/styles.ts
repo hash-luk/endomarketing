@@ -30,4 +30,18 @@ export const Container = styled.div`
         background-color: #FFF2DE;
         border: 1px solid #707070;
     }
+
+    @media screen and (max-width: 1176px) {
+        width: 615px;
+        height: 333px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 912px;
+        height: 200px;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 95%;
+    }
 `

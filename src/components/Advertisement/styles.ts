@@ -17,4 +17,18 @@ export const AdContainer = styled.div`
         font-size: 16px;
         color: #707070;
     }
+
+    @media(max-width: 1024px) {
+        width: 912px;
+        align-items: center;
+    }
+
+    @media(max-width: 768px) {
+        height: 300px;
+        margin-top: 0;
+    }
+
+    @media(max-width: 480px) {
+        display: none;
+    }
 `
